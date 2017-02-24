@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Registration page</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+
+            <fieldset>
+                <legend>Registration Form </legend>
+
+                Firstname: 
+                <h:inputText value="#{registrationBean.firstname}"
+                             id="firstnameInput">
+                </h:inputText>
+                <br/>
+
+                Lastname: 
+                <h:inputText value="#{registrationBean.lastname}"
+                             id="lastnameInput">
+                </h:inputText>
+                <br/>
+
+                Birthdate: 
+                <h:inputText value="#{registrationBean.birthdate}"
+                             id="birthdateInput">
+                </h:inputText>
+                <br/>
+                
+                Title: 
+                <h:inputText value="#{registrationBean.title}"
+                             id="titleInput">
+                </h:inputText>
+                <br/>
+                
+                Full title: 
+                <h:inputText value="#{registrationBean.fulltitle}"
+                             id="fulltitleInput">
+                </h:inputText>
+                <br/>
+                
+                
+                
+
+               
+
+                <br/>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Address1</legend>
+                Code: 
+                <h:inputText value="#{registrationBean.address1Code}"
+                             id="address1Codeinput">
+                </h:inputText>
+                <br/>
+                Town: 
+                <h:inputText value="#{registrationBean.address1Town}"
+                             id="address1Towninput">
+                </h:inputText>
+                <br/>
+            </fieldset>
+            
+             <fieldset>
+                <legend>Address2</legend>
+                Code: 
+                <h:inputText value="#{registrationBean.address2Code}"
+                             id="address2Codeinput">
+                </h:inputText>
+                <br/>
+                Town: 
+                <h:inputText value="#{registrationBean.address2Town}"
+                             id="address2Towninput">
+                </h:inputText>
+                <br/>
+            </fieldset>
+            
+            <br/>
+             <h:commandButton value="Add" 
+                                 action="#{registrationBean.registerUser}"/>
+        </h:form>
+        
+        <h:outputText value="#{registrationBean.message}"/>
+    </h:body>
+</html>
+
