@@ -10,3 +10,15 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/SimplestWEA2/nbproject/private/
+/SimplestWEA2/SimplestWEA2-war/nbproject/private/
+/SimplestWEA2/SimplestWEA2-ejb/nbproject/private/
+/SimplestWEA2/SimplestWEA2-ejb/build/
+/SimplestWEA2/SimplestWEA2-ejb/dist/
+/SimplestWEA2/SimplestWEA2-war/build/
+/SimplestWEA2/build/
+/SimplestWEA2/SimplestWEA2-war/dist/
+/SimplestWEA2/dist/
+/ManagePerson2/nbproject/private/
+/ManagePerson2/ManagePerson2-war/nbproject/private/
+/ManagePerson2/ManagePerson2-ejb/nbproject/private/
