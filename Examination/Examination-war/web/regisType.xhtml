@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Registration page</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+
+            <fieldset>
+                <legend>Registration Form </legend>
+
+                Name: 
+                <h:inputText value="#{regisTypeBean.name}"
+                             id="firstnameInput">
+                </h:inputText>
+                <br/>
+
+                Interval: 
+                <h:inputText value="#{regisTypeBean.interval}"
+                             id="lastnameInput">
+                </h:inputText>
+                <br/>
+
+                Licence: 
+                <h:inputText value="#{regisTypeBean.licence}"
+                             id="nicknameInput">
+                </h:inputText>
+                <br/>
+
+
+                <h:commandButton value="Submit" 
+                                 action="#{regisTypeBean.registerType}"/>
+                
+                <h:commandButton value="try" 
+                                 action="#{regisTypeBean.tryManager}"/>
+                
+                <h:commandButton value="try2" 
+                                 action="#{regisTypeBean.tryManager2}"/>
+
+                <br/>
+
+            </fieldset>
+        </h:form>
+    </h:body>
+</html>
